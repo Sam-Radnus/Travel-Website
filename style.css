@@ -7,67 +7,117 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter&family=IM+Fell+French+Canon+SC&family=Josefin+Sans:wght@400;700&family=Manrope:wght@200&family=Nunito:wght@300;500&family=Secular+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter&family=IM+Fell+French+Canon+SC&family=Josefin+Sans:wght@400;700&family=Manrope:wght@200&family=Nunito:wght@300;500&family=Secular+One&family=Source+Sans+Pro:wght@300&display=swap');
 
-body{
-  height:fit-content;
-
-  margin: 0px;
+div.wrapper > div{
+  border-style:solid;
+}
+div.wrapper{
+  position: absolute;
+  width:100%;
+  top:200%;
+  border-style:solid;
 }
 div.heading{
-  position: relative; 
-
+  position: absolute; 
+  top:0px;
+  left:0px;
+  right:0px;
   justify-content: center;
-  height:20vh;
+  
+  min-height:20vh;
   margin:0;
   background-color: rgb(21, 21, 218);
-  width:100%;
+  /* max-width:100%; */
 }
+/*HEADING                         EXPLORER LA FRANCE*/
 div.heading h1{
-  margin: 5%;
+  position: absolute;
+  top:0;
+  right:0;
+  left:32%;
+  line-height: 0%;
+  font-size: 66px;
    color:white;
+  
 }
-ul.navbar{
-  position:absolute;
-  z-index: 1; 
-  display:inline-flex;
-  color:white;
+
+@media screen and (max-height: 450px) {
+  div.heading h1 {
+    font-size:small;
+  }
+}
+@media screen and (max-width: 1000px) {
+  div.heading h1 {
+    font-size:medium;
+  }
+}
+div.navbar{
+  position: absolute;
+  top:10%;
+  display: inline;
+  left:5%;
+}
+div.navbar ul{
+
+  position:relative;
+  margin:0;
+  list-style-type:none;
+  color:rgb(255, 255, 255);
   font-size:xx-large;
   font-weight:bolder;
-  list-style-type:none;
-  margin-top:2%;
-  left:0%;
- 
-}
-div.waterfall{
-  margin-top:0%;
-  position: relative;
-  height:120vh;
-  width:98.5vw;
-}
-div.waterfall img{
-  top:0;
-  left:0;
-  position: absolute;
-  height:100%;
-  width:100%;
-}
-div.video{
-  width:fit-content;
-  position: absolute;
-  margin:0;
+  
 }
 li.nav{
   text-decoration: none;
+  display: inline-block; 
+  position: relative;
   padding:15px;
+  font-size: 25px;
   font-family: 'Abril Fatface', cursive;
   font-family: 'Comforter', cursive;
   font-family: 'IM Fell French Canon SC', serif;
   font-family: 'Josefin Sans', sans-serif;
-transition: all ease-in 3ms;
+  transition: all ease-in 3ms;
 }
 li:hover{
   color:red;
   cursor: pointer;
 }
+@media screen and (max-width: 70vw) {
+   ul.navbar {
+    font-size:small;
+  }
+}
+div.waterfall{
+  margin-top:0%;
+  position: absolute;
+  height:120vh;
+  width:100%;
+  border-style: solid;
+}
+div.waterfall img{
+  top:0;
+  left:0;
+  display: block;
+  position: absolute;
+  height:100%;
+  width:100%;
+}
+img[class="eiffel"]
+{
+  top:0;
+  left:0;
+  display: block;
+  height:120vh;
+  width:100%;
+}
+div.video{
+  width:100%;
+  position: absolute;
+  top:20%;
+  left:0%;
+}
+
+
 h1{
   font-family: 'Abril Fatface', cursive;
   font-family: 'Comforter', cursive;
@@ -75,7 +125,6 @@ h1{
   top:0%;
   letter-spacing: 5px;
   left:25%;
-  line-height:10px;
   font-size:100px;
   color:white;
 }
@@ -85,14 +134,7 @@ img{
   image-rendering: -webkit-optimize-contrast; 
   top:10%;
 }
-video{
-   position: absolute;
-   top:20%;
-   left:0%;
-   width:103%;
-   height:100vh;
-   object-fit: fill;  
-}
+
 p.country,h2{
   font-family: 'Abril Fatface', cursive;
   font-family: 'Comforter', cursive;
@@ -208,6 +250,9 @@ div.pics1{
   
   
 }
+div#mid-level{
+  left:0;
+}
 p.name{
   position: absolute;
   top: 75%;
@@ -218,7 +263,6 @@ font-family: 'Comforter', cursive;
 font-family: 'IM Fell French Canon SC', serif;
 font-family: 'Josefin Sans', sans-serif;
  font-size: xx-large;
- line-height: 0%;
  background-blend-mode:saturation;
  cursor:pointer;
 
@@ -235,9 +279,9 @@ font-family: 'Comforter', cursive;
 font-family: 'IM Fell French Canon SC', serif;
 font-family: 'Josefin Sans', sans-serif;
 font-family: 'Secular One', sans-serif;
-line-height:0px;
 font-size: 40px;
 margin-left:25%;
+padding: 20px 20px 20px 20px;
 color:blue;
 }
 p.describe{
@@ -300,22 +344,45 @@ p[bold="true"]
 h1.travel{
   color:black;
   color:blue;
-  
+  margin-top: 0%;
 }
 div.info{
   position:absolute;
-  top:205vw;
-  margin-top:50px;
-  width:100%;
+  top:100%;
+  left:0;
+  right:0;
+  margin:0 auto;
+  width:100%; 
 }
 div.necessary{
   display: grid;
   margin-top:0vh;
-  margin-left:2%;
+  margin-left:0%;
   grid-template-columns: repeat(3,1fr);
-  grid-gap: 30px;
+  grid-gap: 15px;
 
 }
+
+@media screen and (max-width: 1050px) {
+  div.necessary,div.visit,div.experience{
+    display:flex;
+    flex-direction: column;
+  }
+  h3.live,h1.travel{
+    font-size: medium;
+    color:black;
+  }
+  div.info{
+    position:absolute;
+    display: block;
+    left:0;
+    right:0;
+    width:100vw;
+    padding:0px;
+    margin:0px;
+  }
+}
+
 p.sub1{
   margin-top: 0px;
   margin-left:35%;
@@ -342,18 +409,18 @@ p.sub2:hover i{
 }
 
 div.bullets{
+  position: relative;
   padding-left: 0px;
   margin:0;
-  font-size:25px;
   margin-bottom:0px;
   margin-left:55px;
-  line-height: 0%;
   border-bottom-style: solid;
   border-color: rgb(184, 170, 170);
   border-width:1px;
   height:fit-content;
   text-align: left;
-  width:70%;
+  max-width:70%;
+  
 }
 i[gap="true"]{
 
@@ -367,16 +434,14 @@ i[gap="true"]:hover{
 }
 div.instagram{
 
-  position: absolute;
-  top:235vw;
-  left:0vw;
+  position: relative;
+  
+  top:400%;
   background-color: blue;
   height:fit-content;
   width:100%;
-  margin-top:50px;
-  float: left;
-  margin:auto;
-   display:block;
+  margin-top:150px;
+
 }
 a{
   text-decoration: none;
@@ -387,11 +452,10 @@ div[class="insta_grid"]
       display: grid;
       grid-template-columns: repeat(4,4fr);
       grid-gap:10px;
-      margin:0;
-      margin-top:150px;
-      margin-left:90px;
-      margin-bottom:150px;
-      float: left;
+      margin-top:20%;
+
+     
+      
 }
 div[class="natural"]
 {
@@ -443,7 +507,8 @@ div[class="natural"]:hover video{
 }
 h1[class="insta_travel"]
 {
-  margin-left:5%;
+  margin-bottom:10%;
+  float: none;
 }
 div[class="footer"]
 {
