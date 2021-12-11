@@ -44,11 +44,54 @@ div.heading h1{
   div.heading h1 {
     font-size:small;
   }
+ 
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 375px) {
   div.heading h1 {
-    font-size:medium;
+    font-size:small;
+    left:0%;
   }
+ 
+}
+@media screen and (min-width: 1000px) {
+  div.heading h1 {
+    font-size:56px;
+  }
+  p[class="name"]{
+    top:55%;
+    bottom:30%;
+    font-size: small;
+  }
+ 
+}
+@media screen and (max-width: 1000px)
+{
+  div.instagram{
+    top:150%;
+    display:block;
+    flex-direction: column;
+  }
+  div[class="insta_grid"]{
+    display: none;
+    flex-direction: column;
+     overflow: scroll;
+  }
+  h1.insta_travel{
+    font-size:45px;
+    margin-top:5px;
+  }
+  div.insta_grid div.natural{
+    height:150px;
+    width:150px;
+   } 
+   p.sub1{
+     font-size: small;
+     margin-right:10%;
+   }
+   div.heading h1 {
+    font-size:40px;
+  }
+
 }
 div.navbar{
   position: absolute;
@@ -86,6 +129,13 @@ li:hover{
    ul.navbar {
     font-size:small;
   }
+ 
+
+}
+@media screen and (min-width: 500px) 
+{
+ 
+ 
 }
 div.waterfall{
   margin-top:0%;
@@ -208,7 +258,7 @@ p{
   font-family: 'IM Fell French Canon SC', serif;
 }
 div.visit{
-  left:0%;
+  left:2%;
   position: relative;
   top:67%;
   display: grid;
@@ -342,9 +392,10 @@ p[bold="true"]
   filter: brightness(105%);
 } 
 h1.travel{
-  color:black;
+  
+  line-height: 0%;
   color:blue;
-  margin-top: 0%;
+ 
 }
 div.info{
   position:absolute;
@@ -368,9 +419,22 @@ div.necessary{
     display:flex;
     flex-direction: column;
   }
-  h3.live,h1.travel{
+  h3.live{
     font-size: medium;
     color:black;
+  }
+  h1.travel
+  { 
+     margin-top:7%;
+     font-size:large;
+     font-weight: bolder;
+     color:blue;
+     font-family: 'Abril Fatface', cursive;
+     font-family: 'Comforter', cursive;
+     font-family: 'IM Fell French Canon SC', serif;
+     font-family: 'Josefin Sans', sans-serif;
+     margin-left:0%;
+     margin-right: 10%;
   }
   div.info{
     position:absolute;
@@ -381,11 +445,13 @@ div.necessary{
     padding:0px;
     margin:0px;
   }
+ 
 }
 
 p.sub1{
-  margin-top: 0px;
+  margin-top: 10px;
   margin-left:35%;
+  margin-bottom:5%;
 }
 div.bullets,p.sub2,p.sub1{
   font-family: 'Abril Fatface', cursive;
@@ -434,14 +500,14 @@ i[gap="true"]:hover{
 }
 div.instagram{
 
-  position: relative;
-  
-  top:400%;
+  position: absolute;
+  top:113%;
   background-color: blue;
   height:fit-content;
+  padding-bottom:36px;
   width:100%;
+  
   margin-top:150px;
-
 }
 a{
   text-decoration: none;
@@ -453,15 +519,15 @@ div[class="insta_grid"]
       grid-template-columns: repeat(4,4fr);
       grid-gap:10px;
       margin-top:20%;
-
-     
-      
+      max-width:1550px;
+      margin-left:10px;
 }
 div[class="natural"]
 {
       position: relative;
       height:295px;
       width:295px;
+      margin-top:20px;
       
 
 }
@@ -510,40 +576,47 @@ h1[class="insta_travel"]
   margin-bottom:10%;
   float: none;
 }
-div[class="footer"]
-{
-  position:relative;
-  background-color: rgb(73, 72, 72);
-  height:54vh;
-  width:100%;
-  margin-top: 207%;
-}
-div.row{
-  margin:0px;
-  margin-left:5%;
-  margin-top:25px;
-  
-}
-div.col-set-1{
-  position: absolute;
-  top:10px;
-  left:25%;
+h4.site{
+  padding-left:10%;
 }
 p.country{
   font-size: xxx-large;
   color:white;
   line-height: 0%;
 }
-h2.site{
-  color: white;
-  margin-left:20%;
-  font-size: 50px;
-  line-height: 0px;
+
+ul[class="2ndrow"] > li{
+  display: inline-block;
+  font-size: xx-large;
+  color:white;
+  margin-right:15px;
+ 
 }
-li.list{
+/*FOOTER               */
+footer.footer{
+  position: absolute;
+  top:100%;
+  width: 100%;
+  background-color:rgb(33, 31, 31);
+  box-sizing:border-box;
+}
+div.row{
+  display: flex;
+  flex-wrap:wrap; 
+  margin-left: 10%;
+ 
+}
+div.row div.content{
+   max-width:1170px;
+   margin: auto;
+} 
+p.country{
   color:rgb(255, 255, 255);
-  font-size:x-large;
-  list-style-type: none;
+  
+}
+div.col-set{
+  width: 25%;
+  margin-top:5%;
   font-family: 'Abril Fatface', cursive;
   font-family: 'Comforter', cursive;
   font-family: 'IM Fell French Canon SC', serif;
@@ -552,31 +625,96 @@ li.list{
   font-family: 'Nunito', sans-serif;
   font-family: 'Secular One', sans-serif;
   font-family: 'Source Sans Pro', sans-serif;
-} 
-ul.row{
-  
-  display:grid;
-  list-style: none;
-  font-size:x-large;
+  font-size:large;
 }
-div.col-set-2{
-  position: absolute;
-  top:10px;
-  left:40%;
+div.col-set ul li
+{
+  list-style-type: none;
+  transition: all 0.5s ease;
 }
-h2.links{
-   color:white;
-   font-size: 50px;
-   line-height: 0px;
-   margin-left:35px;
+div.col-set ul li:hover
+{
+  list-style-type: none;
+  padding-left:8px;
 }
-ul[class="2ndrow"] > li{
-  display: inline-block;
-  font-size: xx-large;
+div.col-set h4{
   color:white;
-  margin-right:15px;
+  line-height: 0%;
+  font-size:x-large;
  
+  
 }
+div.col-set h3{
+  color:white;
+  margin-left:40px;
+}
+div.social-links
+{
+  display:grid;
+  grid-template-columns: repeat(3,2fr);
+  grid-gap:10px;
+}
+div.social-links a{
+  height:60px;
+  width:75px;
+  border-radius: 50%;
+  text-align:center;
+  padding-top:20px;
+  font-size: xx-large;
+  transition:all 0.5s ease;
+
+}
+div.social-links a:hover{
+  
+  color:rgb(255, 255, 255);
+}
+div.social-links a[id="1"]:hover
+{
+  background-color:rgb(33, 67, 136);
+}
+div.social-links a[id="2"]:hover
+{
+  background-color:rgb(14, 124, 192);
+}
+
+div.social-links a[id="3"]:hover
+{
+  background-color:#cd486b;
+}
+
+div.social-links a[id="4"]:hover
+{
+  background-color:rgb(30 215 96);
+}
+
+div.social-links a[id="5"]:hover
+{
+  background-color:rgb(255,0,0);
+}
+div.social-links a[id="6"]:hover
+{
+  background-color:#0063dc;
+}
+@media(max-width:767px)
+{
+  div.col-set{
+    width:50%;
+    margin-bottom:30px;
+  }
+  .row{
+    display: flex;
+  }
+}
+@media(max-width:574px)
+{
+  .row{
+    display: grid;
+  }
+    div.col-set{
+        width: 100%;
+    }
+}
+
 
 
 
