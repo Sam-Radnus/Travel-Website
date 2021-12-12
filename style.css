@@ -10,6 +10,7 @@
 div.wrapper > div{
   border-style:solid;
 }
+
 body{
  
   background-color:#fbfff1 ;
@@ -97,6 +98,12 @@ div.heading h1{
     left: 20%;
     font-size: small;
   }
+  div.vid{
+    display:none;
+    height:100%;
+    width:100%;
+    
+  }
 }
 @media screen and (max-width: 400px) {
   div.heading h1 {
@@ -152,7 +159,7 @@ div.navbar{
   position: absolute;
   top:10%;
   display: inline;
-  left:5%;
+  left:0%;
 }
 div.navbar ul{
 
@@ -169,6 +176,7 @@ li.nav{
   display: inline-block; 
   position: relative;
   padding:15px;
+  z-index: 1;
   font-size: 25px;
   font-family: 'Abril Fatface', cursive;
   font-family: 'Comforter', cursive;
@@ -218,12 +226,29 @@ img[class="eiffel"]
 }
 div.video{
   width:100%;
+  height:100%;
+  max-height:100%;
   position: absolute;
   top:20%;
+  bottom:0;
+  overflow: hidden;
   left:0%;
+  background-image: url("Photos/paris4.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
+video.art1{
+  height: 100vh; 
+  transform: scale(1.2);
+  min-height: 100%;
 
-
+}
+div.vid{
+  object-fit: fill;
+  transform: scale(1.1);
+  background-color:#0a2463;
+}
 h1{
   font-family: 'Abril Fatface', cursive;
   font-family: 'Comforter', cursive;
@@ -256,7 +281,51 @@ i[class="fas fa-angle-double-down"]{
 
   cursor:pointer;
   margin-left:25px;
-  
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation:bounce 2s infinite;
+}
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce{
+  0%,20%,50%,80%,100%
+  {
+    transform:translateY(0);
+  }
+  40%
+  {
+    transform:translateY(-30px);
+  }
+  60%
+  {
+    transform:translateY(-15px);
+  }
 }
 div[class="video"] button{
   border-width:5px;
@@ -279,6 +348,7 @@ div[class="video"] button{
   overflow: hidden;
   -webkit-transition: color 150ms ease-in-out;
   transition: color 150ms ease-in-out;
+  
 }
 div[class="video"] button:hover{
     background-color:#edf2f4;
@@ -323,13 +393,41 @@ div.visit{
   gap:5px;
   width:97%;
 }
-img.curved{
+div.pics > img.curved{
   border-radius: 5px;
   cursor:pointer;
   width:100%;
   height:100%;
+  transition: all 0.5s ease;
 
 }
+div.pics > img.curved:hover{
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1); /* IE 9 */ 
+  transform: scale(1.1);
+}
+div.natural{
+  overflow: hidden;
+}
+div.natural > img.picture{
+  transition: all 0.5s ease;
+  
+ 
+} 
+div.natural  img.picture:hover
+{
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1); /* IE 9 */ 
+  transform: scale(1.05);
+}
+img.picture{
+  transition: all 0.5s ease;
+}
+
 
 div.text{
  
@@ -344,7 +442,7 @@ div.text{
 }
 div.pics{
   position: relative;
- 
+  overflow:hidden;
   padding:0px;
   width:90%;
   height:90%;
@@ -352,13 +450,16 @@ div.pics{
 }
 div.pics1{
   position: relative;
-
+  overflow:hidden;
   padding:0px;
   
   
 }
 div#mid-level{
   left:0;
+ 
+  position: absolute;
+  top:130%;
 }
 p.name{
   position: absolute;
@@ -492,11 +593,8 @@ div.necessary{
      font-size:large;
      font-weight: bolder;
      color:#00296b;
-     font-family: 'Abril Fatface', cursive;
-     font-family: 'Comforter', cursive;
-     font-family: 'IM Fell French Canon SC', serif;
-     font-family: 'Josefin Sans', sans-serif;
-     margin-left:0%;
+    
+     margin-left:10%;
      margin-right: 10%;
   }
   div.info{
@@ -617,6 +715,10 @@ div[class="natural"]
       transition:all 0.5s ease-in;
 
 }
+*
+{
+  scroll-behavior:smooth;
+}
 img[class="picture"]
 {
   height:100%;
@@ -634,6 +736,7 @@ video[class="sub"]
   cursor:pointer;
   object-fit:contain;
   background-color: rgb(16, 23, 58);
+  transform:scale(1.1);
 
   filter:brightness(100%);
 }
