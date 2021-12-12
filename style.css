@@ -6,9 +6,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter&family=IM+Fell+French+Canon+SC&family=Josefin+Sans:wght@400;700&family=Manrope:wght@200&family=Secular+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter&family=IM+Fell+French+Canon+SC&family=Josefin+Sans:wght@400;700&family=Manrope:wght@200&family=Nunito:wght@300;500&family=Secular+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter&family=IM+Fell+French+Canon+SC&family=Josefin+Sans:wght@400;700&family=Manrope:wght@200&family=Nunito:wght@300;500&family=Secular+One&family=Source+Sans+Pro:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter&family=IM+Fell+French+Canon+SC&family=Josefin+Sans:wght@400;700&family=Manrope:wght@200&family=Nunito:wght@300;500&family=PT+Sans&family=Readex+Pro&family=Secular+One&family=Source+Sans+Pro:wght@300&family=Varela+Round&display=swap');
 div.wrapper > div{
   border-style:solid;
+}
+body{
+ 
+  background-color:#fbfff1 ;
 }
 div.wrapper{
   position: absolute;
@@ -22,35 +26,85 @@ div.heading{
   left:0px;
   right:0px;
   justify-content: center;
-  
+   
   min-height:20vh;
   margin:0;
-  background-color: rgb(21, 21, 218);
+  background-color:#0a2463 ;
   /* max-width:100%; */
 }
 /*HEADING                         EXPLORER LA FRANCE*/
 div.heading h1{
   position: absolute;
-  top:0;
+  top:25%;
   right:0;
-  left:32%;
+  left:36%;
   line-height: 0%;
   font-size: 66px;
-   color:white;
+   color:#edf2f4;
   
 }
 
 @media screen and (max-height: 450px) {
   div.heading h1 {
     font-size:small;
+    top:25%;
+  right:0;
+  left:36%;
   }
+
  
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 669px) 
+{
   div.heading h1 {
     font-size:small;
-    left:0%;
+    left:0;
   }
+  div.pics1 p
+  {
+    position: absolute;
+    top:0;
+    font-size:20px;
+  }
+  div.pics p
+  {
+    position: absolute;
+    top:0;
+    font-size:20px;
+  }
+  div.pics1 div.read
+  {
+    
+    font-size:10px;
+    height:fit-content;
+    width: fit-content;
+  }
+  h1.travel{
+    
+    border-bottom:50px;
+    width:100%;
+    font-size: small;
+    left:0%;
+    
+  }
+  div[class="natural"]:hover i{
+    top:50%;
+    left: 50%;
+    font-size: large;
+  }
+  div[class="natural"]:hover p.date{
+    top:70%;
+    left: 20%;
+    font-size: small;
+  }
+}
+@media screen and (max-width: 400px) {
+  div.heading h1 {
+    font-size:small;
+    top:0;
+    left:0;
+  }
+ 
  
 }
 @media screen and (min-width: 1000px) {
@@ -92,6 +146,7 @@ div.heading h1{
     font-size:40px;
   }
 
+
 }
 div.navbar{
   position: absolute;
@@ -119,17 +174,18 @@ li.nav{
   font-family: 'Comforter', cursive;
   font-family: 'IM Fell French Canon SC', serif;
   font-family: 'Josefin Sans', sans-serif;
-  transition: all ease-in 3ms;
+ 
 }
 li:hover{
-  color:red;
+  color:#d90429;
   cursor: pointer;
+   transition: all 0.3s ease; 
 }
 @media screen and (max-width: 70vw) {
    ul.navbar {
     font-size:small;
   }
- 
+  
 
 }
 @media screen and (min-width: 500px) 
@@ -176,7 +232,7 @@ h1{
   letter-spacing: 5px;
   left:25%;
   font-size:100px;
-  color:white;
+  color:#edf2f4;
 }
 img{
   line-height:0px;
@@ -211,7 +267,7 @@ div[class="video"] button{
   font-size:larger;
   font-weight: bolder;
   background-color: transparent;
-  border-color:white;
+  border-color:#edf2f4;
   color:rgb(255, 255, 255);
   top:40%;
   z-index: 1;
@@ -225,15 +281,16 @@ div[class="video"] button{
   transition: color 150ms ease-in-out;
 }
 div[class="video"] button:hover{
-    background-color:white;
+    background-color:#edf2f4;
     color:transparent;
     color:#000;
     color:rgba(0,0,0,0.5);
+    transition: all 0.3s ease; 
 }
 button:hover{
   
   transition: 1s ease-in-out;
-  background-color:white;
+  background-color:#edf2f4;
   cursor:pointer;
   border-radius:0;
 }
@@ -247,7 +304,7 @@ div[class="coating"]
 }
 div.down{
   position: absolute;
-  color:white;
+  color:#edf2f4;
   top:70%;
   left:44%;
 }
@@ -307,7 +364,7 @@ p.name{
   position: absolute;
   top: 75%;
   margin-left:2%;
-  color:white;
+  color:#edf2f4;
   font-family: 'Abril Fatface', cursive;
 font-family: 'Comforter', cursive;
 font-family: 'IM Fell French Canon SC', serif;
@@ -323,16 +380,22 @@ div.container{
 
 }
 h3.live{
- 
   font-family: 'Abril Fatface', cursive;
-font-family: 'Comforter', cursive;
-font-family: 'IM Fell French Canon SC', serif;
-font-family: 'Josefin Sans', sans-serif;
-font-family: 'Secular One', sans-serif;
-font-size: 40px;
+  font-family: 'Comforter', cursive;
+font-size: 70px;
 margin-left:25%;
+letter-spacing: 5px;;
 padding: 20px 20px 20px 20px;
-color:blue;
+color:#2b2d42;
+}
+h1::selection,h3::selection {
+   color: #d90429; 
+  background-color:#0a2463;
+}
+p::selection{
+  color:white;
+  background-color: #d90429; 
+  font-weight:bolder;
 }
 p.describe{
   font-family: 'Abril Fatface', cursive;
@@ -343,7 +406,7 @@ font-family: 'Manrope', sans-serif;
 font-family: 'Secular One', sans-serif;
 font-weight: lighter;
 text-align: center;
-color: red;
+color: #d90429;
 margin-bottom:50px;
 }
 div.experience{
@@ -354,7 +417,7 @@ div.experience{
 }
 div.read{
   position: absolute;
-  background-color: rgb(30, 30, 245);
+  background-color:#00296b;
   color:whitesmoke;
   width:130px;
   height:25px;
@@ -366,12 +429,12 @@ div.read{
   font-family: 'Josefin Sans', sans-serif;
   font-family: 'Secular One', sans-serif;
   border-radius: 25px;
-  top:77%;
+  top:81%;
   right:4%;
   cursor: pointer;
 }
 div.read:hover {
-  background-color: red;
+  background-color: #d90429;
 }
 div[class="pics1"]:hover img
 {
@@ -394,7 +457,7 @@ p[bold="true"]
 h1.travel{
   
   line-height: 0%;
-  color:blue;
+  color:#3e92cc ;
  
 }
 div.info{
@@ -421,14 +484,14 @@ div.necessary{
   }
   h3.live{
     font-size: medium;
-    color:black;
+    
   }
   h1.travel
   { 
      margin-top:7%;
      font-size:large;
      font-weight: bolder;
-     color:blue;
+     color:#00296b;
      font-family: 'Abril Fatface', cursive;
      font-family: 'Comforter', cursive;
      font-family: 'IM Fell French Canon SC', serif;
@@ -447,7 +510,25 @@ div.necessary{
   }
  
 }
-
+p.date{
+  position:absolute;
+  top: 85%;
+  left:20%;
+  font-size: medium;
+  display: none;
+  color:snow;
+  font-family: 'Abril Fatface', cursive;
+font-family: 'Comforter', cursive;
+font-family: 'IM Fell French Canon SC', serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Manrope', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'PT Sans', sans-serif;
+font-family: 'Readex Pro', sans-serif;
+font-family: 'Secular One', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Varela Round', sans-serif;
+}
 p.sub1{
   margin-top: 10px;
   margin-left:35%;
@@ -468,10 +549,11 @@ p.sub2{
   cursor:pointer;
   margin:0px;
   margin-bottom: 15px;
+  font-size:larger;
 }
 p.sub2:hover i{
  
-  color:blue;
+  color:#3e92cc ;
 }
 
 div.bullets{
@@ -481,7 +563,7 @@ div.bullets{
   margin-bottom:0px;
   margin-left:55px;
   border-bottom-style: solid;
-  border-color: rgb(184, 170, 170);
+  border-color:  #8d99ae;
   border-width:1px;
   height:fit-content;
   text-align: left;
@@ -490,28 +572,32 @@ div.bullets{
 }
 i[gap="true"]{
 
-  color:red;
+  color:#d90429;
   margin-right:10px;
  
 }
 i[gap="true"]:hover{
-  color:blue;
+  color:#4095d1;
   cursor:pointer;
 }
 div.instagram{
 
   position: absolute;
   top:113%;
-  background-color: blue;
+  background-color: #00296b;
   height:fit-content;
   padding-bottom:36px;
+ 
   width:100%;
   
   margin-top:150px;
 }
+div[class="insta_grid"]{
+  margin-left:10%;
+}
 a{
   text-decoration: none;
-  color: white;
+  color: #edf2f4;
 }
 div[class="insta_grid"]
 {
@@ -528,7 +614,7 @@ div[class="natural"]
       height:295px;
       width:295px;
       margin-top:20px;
-      
+      transition:all 0.5s ease-in;
 
 }
 img[class="picture"]
@@ -567,6 +653,11 @@ div[class="natural"]:hover i[class="fab fa-instagram"]
 }
 div[class="natural"]:hover img{
   filter:brightness(50%);
+  transition:all 0.25s ease;
+}
+div[class="natural"]:hover p{
+   display:inline;
+   transition:all 0.25s ease;
 }
 div[class="natural"]:hover video{
   filter:brightness(50%);
@@ -597,7 +688,7 @@ footer.footer{
   position: absolute;
   top:100%;
   width: 100%;
-  background-color:rgb(33, 31, 31);
+  background-color: #00171f;
   box-sizing:border-box;
 }
 div.row{
@@ -638,14 +729,14 @@ div.col-set ul li:hover
   padding-left:8px;
 }
 div.col-set h4{
-  color:white;
+  color:#fbfff1;
   line-height: 0%;
   font-size:x-large;
  
   
 }
 div.col-set h3{
-  color:white;
+  color:#fbfff1;
   margin-left:40px;
 }
 div.social-links
