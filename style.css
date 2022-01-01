@@ -414,7 +414,6 @@ div.natural{
 div.natural > img.picture{
   transition: all 0.5s ease;
   
- 
 } 
 div.natural  img.picture:hover
 {
@@ -908,8 +907,29 @@ div.social-links a[id="6"]:hover
         width: 100%;
     }
 }
+::-webkit-scrollbar {
+  width: 15px;
+  border-radius: 5px;
+  background-color: red;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
 
-
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(132, 116, 237);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 1px blue;
+  border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: blueviolet;
+  cursor:grabbing;
+}
 
 
 
