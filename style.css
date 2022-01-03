@@ -10,7 +10,9 @@
 div.wrapper > div{
   border-style:solid;
 }
-
+*{
+  transition: all 0.3s;
+}
 body{
  
   background-color:#fbfff1 ;
@@ -451,6 +453,7 @@ div.pics1{
   position: relative;
   overflow:hidden;
   padding:0px;
+  transition:all 0.3s fade-in;
   
   
 }
@@ -535,10 +538,12 @@ div.read{
 }
 div.read:hover {
   background-color: #d90429;
+  transition: 0.3s all;
 }
 div[class="pics1"]:hover img
 {
   filter: brightness(105%);
+  transition:all 0.3s;
 }
 p[bold="true"]
 {
@@ -883,6 +888,7 @@ div.social-links a[id="4"]:hover
 div.social-links a[id="5"]:hover
 {
   background-color:rgb(255,0,0);
+  transition: 0.3s all;
 }
 div.social-links a[id="6"]:hover
 {
