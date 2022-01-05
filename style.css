@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 div.wrapper > div{
   border-style:solid;
 }
@@ -237,7 +238,7 @@ div.vid{
   background-color:#0a2463;
 }
 h1{
-  font-family: 'Raleway', sans-serif;: 'Raleway', sans-serif;
+  font-family: 'Anton', sans-serif;
   position: absolute;
   top:0%;
   letter-spacing: 5px;
@@ -456,11 +457,11 @@ div.container{
 
 }
 h3.live{
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Anton', sans-serif;
 font-size: 70px;
-margin-left:25%;
-letter-spacing: 5px;;
-padding: 20px 20px 20px 20px;
+margin-left:20%;
+letter-spacing: 5px;
+/* padding: 20px 20px 20px 20px; */
 color:#2b2d42;
 }
 h1::selection,h3::selection {
