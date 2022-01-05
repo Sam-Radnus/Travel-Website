@@ -1,12 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter&family=IM+Fell+French+Canon+SC&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter&family=IM+Fell+French+Canon+SC&family=Josefin+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter&family=IM+Fell+French+Canon+SC&family=Josefin+Sans:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter&family=IM+Fell+French+Canon+SC&family=Josefin+Sans:wght@400;700&family=Secular+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter&family=IM+Fell+French+Canon+SC&family=Josefin+Sans:wght@400;700&family=Manrope:wght@200&family=Secular+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter&family=IM+Fell+French+Canon+SC&family=Josefin+Sans:wght@400;700&family=Manrope:wght@200&family=Nunito:wght@300;500&family=Secular+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter&family=IM+Fell+French+Canon+SC&family=Josefin+Sans:wght@400;700&family=Manrope:wght@200&family=Nunito:wght@300;500&family=Secular+One&family=Source+Sans+Pro:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter&family=IM+Fell+French+Canon+SC&family=Josefin+Sans:wght@400;700&family=Manrope:wght@200&family=Nunito:wght@300;500&family=PT+Sans&family=Readex+Pro&family=Secular+One&family=Source+Sans+Pro:wght@300&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
 div.wrapper > div{
   border-style:solid;
 }
@@ -49,10 +41,10 @@ div.heading h1{
 
 @media screen and (max-height: 450px) {
   div.heading h1 {
-    font-size:small;
+    font-size:medium;
     top:25%;
-  right:0;
-  left:36%;
+    right:0;
+    left:36%;
   }
 
  
@@ -60,7 +52,7 @@ div.heading h1{
 @media screen and (max-width: 669px) 
 {
   div.heading h1 {
-    font-size:small;
+    font-size:medium;
     left:0;
   }
   div.pics1 p
@@ -180,10 +172,7 @@ li.nav{
   padding:15px;
   z-index: 1;
   font-size: 25px;
-  font-family: 'Abril Fatface', cursive;
-  font-family: 'Comforter', cursive;
-  font-family: 'IM Fell French Canon SC', serif;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;: 'Raleway', sans-serif;
  
 }
 li:hover{
@@ -198,11 +187,7 @@ li:hover{
   
 
 }
-@media screen and (min-width: 500px) 
-{
- 
- 
-}
+
 div.waterfall{
   margin-top:0%;
   position: absolute;
@@ -252,8 +237,7 @@ div.vid{
   background-color:#0a2463;
 }
 h1{
-  font-family: 'Abril Fatface', cursive;
-  font-family: 'Comforter', cursive;
+  font-family: 'Raleway', sans-serif;: 'Raleway', sans-serif;
   position: absolute;
   top:0%;
   letter-spacing: 5px;
@@ -269,13 +253,8 @@ img{
 }
 
 p.country,h2{
-  font-family: 'Abril Fatface', cursive;
-  font-family: 'Comforter', cursive;
-  font-family: 'IM Fell French Canon SC', serif;
-  font-family: 'Josefin Sans', sans-serif;
-  font-family: 'Manrope', sans-serif;
-  font-family: 'Nunito', sans-serif;
-  font-family: 'Secular One', sans-serif;
+ 
+  font-family: 'Raleway', sans-serif;: 'Raleway', sans-serif;
   font-weight: normal;
   cursor:pointer;
 }
@@ -331,9 +310,7 @@ i[class="fas fa-angle-double-down"]{
 }
 div[class="video"] button{
   border-width:5px;
-  font-family: 'Abril Fatface', cursive;
-  font-family: 'Comforter', cursive;
-  font-family: 'IM Fell French Canon SC', serif;
+  font-family: 'Raleway', sans-serif;: 'Raleway', sans-serif;
   position: absolute; 
   font-size:larger;
   font-weight: bolder;
@@ -382,9 +359,8 @@ div.down{
 }
 p{
   margin-left:50px;
-  font-family: 'Abril Fatface', cursive;
-  font-family: 'Comforter', cursive;
-  font-family: 'IM Fell French Canon SC', serif;
+  font-family: 'Raleway', sans-serif;
+  
 }
 div.visit{
   left:2%;
@@ -432,9 +408,8 @@ img.picture{
 
 div.text{
  
-  font-family: 'Abril Fatface', cursive;
-  font-family: 'Comforter', cursive;
-  font-family: 'IM Fell French Canon SC', serif;
+  font-family: 'Raleway', sans-serif;
+  
   color:rgb(0, 0, 0);
   font-size:50px;
   line-height:0px;
@@ -468,10 +443,8 @@ p.name{
   top: 75%;
   margin-left:2%;
   color:#edf2f4;
-  font-family: 'Abril Fatface', cursive;
-font-family: 'Comforter', cursive;
-font-family: 'IM Fell French Canon SC', serif;
-font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
+
  font-size: xx-large;
  background-blend-mode:saturation;
  cursor:pointer;
@@ -483,8 +456,7 @@ div.container{
 
 }
 h3.live{
-  font-family: 'Abril Fatface', cursive;
-  font-family: 'Comforter', cursive;
+  font-family: 'Raleway', sans-serif;
 font-size: 70px;
 margin-left:25%;
 letter-spacing: 5px;;
@@ -492,8 +464,9 @@ padding: 20px 20px 20px 20px;
 color:#2b2d42;
 }
 h1::selection,h3::selection {
-   color: #d90429; 
-  background-color:#0a2463;
+background-color:blue;
+color:white;
+
 }
 p::selection{
   color:white;
@@ -501,12 +474,7 @@ p::selection{
   font-weight:bolder;
 }
 p.describe{
-  font-family: 'Abril Fatface', cursive;
-font-family: 'Comforter', cursive;
-font-family: 'IM Fell French Canon SC', serif;
-font-family: 'Josefin Sans', sans-serif;
-font-family: 'Manrope', sans-serif;
-font-family: 'Secular One', sans-serif;
+  font-family: 'Raleway', sans-serif;
 font-weight: lighter;
 text-align: center;
 color: #d90429;
@@ -526,11 +494,7 @@ div.read{
   height:25px;
   text-align: center;
   padding:10px;
-  font-family: 'Abril Fatface', cursive;
-  font-family: 'Comforter', cursive;
-  font-family: 'IM Fell French Canon SC', serif;
-  font-family: 'Josefin Sans', sans-serif;
-  font-family: 'Secular One', sans-serif;
+  font-family: 'Raleway', sans-serif;
   border-radius: 25px;
   top:81%;
   right:4%;
@@ -619,17 +583,7 @@ p.date{
   font-size: medium;
   display: none;
   color:snow;
-  font-family: 'Abril Fatface', cursive;
-font-family: 'Comforter', cursive;
-font-family: 'IM Fell French Canon SC', serif;
-font-family: 'Josefin Sans', sans-serif;
-font-family: 'Manrope', sans-serif;
-font-family: 'Nunito', sans-serif;
-font-family: 'PT Sans', sans-serif;
-font-family: 'Readex Pro', sans-serif;
-font-family: 'Secular One', sans-serif;
-font-family: 'Source Sans Pro', sans-serif;
-font-family: 'Varela Round', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 p.sub1{
   margin-top: 10px;
@@ -637,14 +591,7 @@ p.sub1{
   margin-bottom:5%;
 }
 div.bullets,p.sub2,p.sub1{
-  font-family: 'Abril Fatface', cursive;
-  font-family: 'Comforter', cursive;
-  font-family: 'IM Fell French Canon SC', serif;
-  font-family: 'Josefin Sans', sans-serif;
-  font-family: 'Manrope', sans-serif;
-  font-family: 'Nunito', sans-serif;
-  font-family: 'Secular One', sans-serif;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Raleway', sans-serif;
   margin-top:10%;
 }
 p.sub2{
@@ -815,14 +762,7 @@ p.country{
 div.col-set{
   width: 25%;
   margin-top:5%;
-  font-family: 'Abril Fatface', cursive;
-  font-family: 'Comforter', cursive;
-  font-family: 'IM Fell French Canon SC', serif;
-  font-family: 'Josefin Sans', sans-serif;
-  font-family: 'Manrope', sans-serif;
-  font-family: 'Nunito', sans-serif;
-  font-family: 'Secular One', sans-serif;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size:large;
 }
 div.col-set ul li
