@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap');
 div.wrapper > div{
   border-style:solid;
 }
@@ -21,7 +23,7 @@ div.heading{
   top:0px;
   left:0px;
   right:0px;
-  justify-content: center;
+  
    
   min-height:20vh;
   margin:0;
@@ -33,7 +35,7 @@ div.heading h1{
   position: absolute;
   top:25%;
   right:0;
-  left:36%;
+  left:32%;
   line-height: 0%;
   font-size: 66px;
    color:#edf2f4;
@@ -72,6 +74,7 @@ div.heading h1{
   {
     
     font-size:10px;
+   
     height:fit-content;
     width: fit-content;
   }
@@ -100,11 +103,14 @@ div.heading h1{
     
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 1000px) {
   div.heading h1 {
     font-size:small;
     top:0;
     left:0;
+  }
+  video{
+    display: none;
   }
  
  
@@ -154,7 +160,7 @@ div.navbar{
   position: absolute;
   top:10%;
   display: inline;
-  left:0%;
+  left:10%;
 }
 div.navbar ul{
 
@@ -173,7 +179,7 @@ li.nav{
   padding:15px;
   z-index: 1;
   font-size: 25px;
-  font-family: 'Raleway', sans-serif;: 'Raleway', sans-serif;
+  font-family: 'Oswald', sans-serif;
  
 }
 li:hover{
@@ -255,14 +261,14 @@ img{
 
 p.country,h2{
  
-  font-family: 'Raleway', sans-serif;: 'Raleway', sans-serif;
+  font-family: 'Barlow Semi Condensed', sans-serif;
   font-weight: normal;
   cursor:pointer;
 }
 i[class="fas fa-angle-double-down"]{
 
   cursor:pointer;
-  margin-left:25px;
+  margin-left:17px;
   -moz-animation: bounce 2s infinite;
   -webkit-animation: bounce 2s infinite;
   animation:bounce 2s infinite;
@@ -311,7 +317,7 @@ i[class="fas fa-angle-double-down"]{
 }
 div[class="video"] button{
   border-width:5px;
-  font-family: 'Raleway', sans-serif;: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif; 
   position: absolute; 
   font-size:larger;
   font-weight: bolder;
@@ -356,7 +362,7 @@ div.down{
   position: absolute;
   color:#edf2f4;
   top:70%;
-  left:44%;
+  left:45%;
 }
 p{
   margin-left:50px;
@@ -444,7 +450,7 @@ p.name{
   top: 75%;
   margin-left:2%;
   color:#edf2f4;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Barlow Semi Condensed', sans-serif;
 
  font-size: xx-large;
  background-blend-mode:saturation;
@@ -494,7 +500,8 @@ div.read{
   width:130px;
   height:25px;
   text-align: center;
-  padding:10px;
+  padding:10px ;
+  padding-top:15px;
   font-family: 'Raleway', sans-serif;
   border-radius: 25px;
   top:81%;
