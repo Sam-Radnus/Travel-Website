@@ -11,6 +11,7 @@ div.wrapper > div{
 body{
  
   background-color:#fbfff1 ;
+  overflow-x: hidden;
 }
 div.wrapper{
   position: absolute;
@@ -924,8 +925,6 @@ div.cursor{
     opacity: 0;
   }
 }
-
-
 
 
 
